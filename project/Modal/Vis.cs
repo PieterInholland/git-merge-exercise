@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Modal
 {
-    internal class Vis
+    public class Vis
     {
         public int id;
         public string name;
