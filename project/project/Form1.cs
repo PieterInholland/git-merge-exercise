@@ -6,6 +6,8 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using Modal;
+using Database;
 
 namespace project
 {
@@ -22,8 +24,33 @@ namespace project
             {
 
                 // hide all other panels
-
+                Vlees.Hide();
+                Vis.Hide();
                 // show 
+                Fruit.Show();
+                //get data
+                FruitDAO fruitDAO = new FruitDAO();
+                List<Fruit> fruitList = fruitDAO.getFruit();
+
+                //clear listview
+                LVFruit.Clear();
+                //grid
+                LVFruit.View = View.Details;
+                LVFruit.GridLines = true;
+                LVFruit.FullRowSelect = true;
+                //header
+                LVFruit.Columns.Add("ID",50);
+                LVFruit.Columns.Add("name",150);
+                LVFruit.Columns.Add("Description",565);
+                foreach (Fruit f in fruitList)
+                {
+                    string[] items = new string[3];
+                    items[0] = f.id.ToString();
+                    items[1] = f.name;
+                    items[2] = f.description;
+                    ListViewItem li = new ListViewItem(items);
+                    LVFruit.Items.Add(li);
+                }
 
             }
             else if (panelName == "Vlees")
@@ -43,7 +70,7 @@ namespace project
         }
         private void fruitGroentenToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            showPanel("Fruit");
         }
 
         private void vleesToolStripMenuItem_Click(object sender, EventArgs e)
@@ -56,11 +83,5 @@ namespace project
 
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            Fruit.Hide();
-            Vlees.Hide();
-            Vis.Hide();
-        }
     }
 }
