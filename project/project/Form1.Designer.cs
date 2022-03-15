@@ -40,9 +40,11 @@
             this.Fruit = new System.Windows.Forms.Panel();
             this.Vlees = new System.Windows.Forms.Panel();
             this.Vis = new System.Windows.Forms.Panel();
+            this.LVVis = new System.Windows.Forms.ListView();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
+            this.Vis.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -82,6 +84,7 @@
             this.closeToolStripMenuItem1.Name = "closeToolStripMenuItem1";
             this.closeToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.closeToolStripMenuItem1.Text = "Close";
+            this.closeToolStripMenuItem1.Click += new System.EventHandler(this.closeToolStripMenuItem1_Click);
             // 
             // fruitGroentenToolStripMenuItem
             // 
@@ -120,10 +123,20 @@
             // 
             // Vis
             // 
+            this.Vis.Controls.Add(this.LVVis);
             this.Vis.Location = new System.Drawing.Point(12, 27);
             this.Vis.Name = "Vis";
             this.Vis.Size = new System.Drawing.Size(776, 411);
             this.Vis.TabIndex = 4;
+            // 
+            // LVVis
+            // 
+            this.LVVis.HideSelection = false;
+            this.LVVis.Location = new System.Drawing.Point(3, 3);
+            this.LVVis.Name = "LVVis";
+            this.LVVis.Size = new System.Drawing.Size(770, 405);
+            this.LVVis.TabIndex = 0;
+            this.LVVis.UseCompatibleStateImageBehavior = false;
             // 
             // pictureBox1
             // 
@@ -152,16 +165,16 @@
             this.ClientSize = new System.Drawing.Size(1000, 450);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.Vlees);
-            this.Controls.Add(this.Fruit);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.Vis);
+            this.Controls.Add(this.Vlees);
+            this.Controls.Add(this.Fruit);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.Vis.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -183,6 +196,7 @@
         private System.Windows.Forms.Panel Vis;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ListView LVVis;
     }
 }
 

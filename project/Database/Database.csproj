@@ -44,5 +44,11 @@
     <Compile Include="VleesDAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Modal\Model.csproj">
+      <Project>{300e18dd-50b6-4863-a7fc-2adc5364159e}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
