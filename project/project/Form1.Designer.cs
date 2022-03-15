@@ -39,10 +39,10 @@
             this.visToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Fruit = new System.Windows.Forms.Panel();
             this.Vlees = new System.Windows.Forms.Panel();
+            this.vleesListView = new System.Windows.Forms.ListView();
             this.Vis = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.vleesListView = new System.Windows.Forms.ListView();
             this.menuStrip1.SuspendLayout();
             this.Vlees.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -82,8 +82,9 @@
             // closeToolStripMenuItem1
             // 
             this.closeToolStripMenuItem1.Name = "closeToolStripMenuItem1";
-            this.closeToolStripMenuItem1.Size = new System.Drawing.Size(103, 22);
+            this.closeToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.closeToolStripMenuItem1.Text = "Close";
+            this.closeToolStripMenuItem1.Click += new System.EventHandler(this.closeToolStripMenuItem1_Click);
             // 
             // fruitGroentenToolStripMenuItem
             // 
@@ -121,6 +122,15 @@
             this.Vlees.Size = new System.Drawing.Size(776, 411);
             this.Vlees.TabIndex = 3;
             // 
+            // vleesListView
+            // 
+            this.vleesListView.HideSelection = false;
+            this.vleesListView.Location = new System.Drawing.Point(3, 3);
+            this.vleesListView.Name = "vleesListView";
+            this.vleesListView.Size = new System.Drawing.Size(770, 405);
+            this.vleesListView.TabIndex = 0;
+            this.vleesListView.UseCompatibleStateImageBehavior = false;
+            // 
             // Vis
             // 
             this.Vis.Location = new System.Drawing.Point(12, 27);
@@ -147,15 +157,6 @@
             this.label1.Size = new System.Drawing.Size(131, 73);
             this.label1.TabIndex = 6;
             this.label1.Text = "Hoi";
-            // 
-            // vleesListView
-            // 
-            this.vleesListView.HideSelection = false;
-            this.vleesListView.Location = new System.Drawing.Point(3, 3);
-            this.vleesListView.Name = "vleesListView";
-            this.vleesListView.Size = new System.Drawing.Size(770, 405);
-            this.vleesListView.TabIndex = 0;
-            this.vleesListView.UseCompatibleStateImageBehavior = false;
             // 
             // Form1
             // 

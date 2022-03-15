@@ -91,5 +91,11 @@ namespace project
         private void Form1_Load(object sender, EventArgs e)
         {
         }
+
+        private void closeToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            //Close (Console) app
+            System.Environment.Exit(1);
+        }
     }
 }
