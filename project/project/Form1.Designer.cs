@@ -42,7 +42,9 @@
             this.Vis = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.vleesListView = new System.Windows.Forms.ListView();
             this.menuStrip1.SuspendLayout();
+            this.Vlees.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -80,7 +82,7 @@
             // closeToolStripMenuItem1
             // 
             this.closeToolStripMenuItem1.Name = "closeToolStripMenuItem1";
-            this.closeToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.closeToolStripMenuItem1.Size = new System.Drawing.Size(103, 22);
             this.closeToolStripMenuItem1.Text = "Close";
             // 
             // fruitGroentenToolStripMenuItem
@@ -113,6 +115,7 @@
             // 
             // Vlees
             // 
+            this.Vlees.Controls.Add(this.vleesListView);
             this.Vlees.Location = new System.Drawing.Point(12, 27);
             this.Vlees.Name = "Vlees";
             this.Vlees.Size = new System.Drawing.Size(776, 411);
@@ -145,6 +148,15 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "Hoi";
             // 
+            // vleesListView
+            // 
+            this.vleesListView.HideSelection = false;
+            this.vleesListView.Location = new System.Drawing.Point(3, 3);
+            this.vleesListView.Name = "vleesListView";
+            this.vleesListView.Size = new System.Drawing.Size(770, 405);
+            this.vleesListView.TabIndex = 0;
+            this.vleesListView.UseCompatibleStateImageBehavior = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -162,6 +174,7 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.Vlees.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -183,6 +196,7 @@
         private System.Windows.Forms.Panel Vis;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ListView vleesListView;
     }
 }
 
