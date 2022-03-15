@@ -24,8 +24,33 @@ namespace project
             {
 
                 // hide all other panels
-
+                Vlees.Hide();
+                Vis.Hide();
                 // show 
+                Fruit.Show();
+                //get data
+                FruitDAO fruitDAO = new FruitDAO();
+                List<Fruit> fruitList = fruitDAO.getFruit();
+
+                //clear listview
+                LVFruit.Clear();
+                //grid
+                LVFruit.View = View.Details;
+                LVFruit.GridLines = true;
+                LVFruit.FullRowSelect = true;
+                //header
+                LVFruit.Columns.Add("ID",50);
+                LVFruit.Columns.Add("name",150);
+                LVFruit.Columns.Add("Description",565);
+                foreach (Fruit f in fruitList)
+                {
+                    string[] items = new string[3];
+                    items[0] = f.id.ToString();
+                    items[1] = f.name;
+                    items[2] = f.description;
+                    ListViewItem li = new ListViewItem(items);
+                    LVFruit.Items.Add(li);
+                }
 
             }            
             else if (panelName == "Vis")
@@ -71,7 +96,7 @@ namespace project
         }
         private void fruitGroentenToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            showPanel("Vis");
+            showPanel("Fruit");
         }
 
         private void vleesToolStripMenuItem_Click(object sender, EventArgs e)
