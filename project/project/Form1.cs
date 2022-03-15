@@ -23,7 +23,14 @@ namespace project
             if (panelName == "Fruit")
             {
 
-            }            
+            }
+            else if (panelName == "Vlees")
+            {
+                // hide all other panels
+
+                // show 
+
+            }
             else if (panelName == "Vis")
             {
                 // hide all other panels
@@ -56,23 +63,15 @@ namespace project
                 }
 
             }
-            else if (panelName == "Vlees")
-            {
-                // hide all other panels
 
-                // show 
-
-            }
-
+        }
+        private void vleesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            showPanel("Vis");
         }
         private void fruitGroentenToolStripMenuItem_Click(object sender, EventArgs e)
         {
             showPanel("Fruit");
-        }
-
-        private void vleesToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            showPanel("Vis");
         }
 
         private void visToolStripMenuItem_Click(object sender, EventArgs e)
