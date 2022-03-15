@@ -83,5 +83,10 @@ namespace project
 
         }
 
+        private void closeToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            // WinForms app
+            System.Windows.Forms.Application.Exit();
+        }
     }
 }
