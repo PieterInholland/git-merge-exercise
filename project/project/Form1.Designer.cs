@@ -70,7 +70,7 @@
             this.visToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1000, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1004, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -85,7 +85,7 @@
             // closeToolStripMenuItem1
             // 
             this.closeToolStripMenuItem1.Name = "closeToolStripMenuItem1";
-            this.closeToolStripMenuItem1.Size = new System.Drawing.Size(103, 22);
+            this.closeToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.closeToolStripMenuItem1.Text = "Close";
             this.closeToolStripMenuItem1.Click += new System.EventHandler(this.closeToolStripMenuItem1_Click);
             // 
@@ -156,20 +156,10 @@
             this.pictureBox1.Image = global::project.Properties.Resources.gouda_jong_wiel_jhqj_q2;
             this.pictureBox1.Location = new System.Drawing.Point(794, 27);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(193, 96);
+            this.pictureBox1.Size = new System.Drawing.Size(198, 96);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(795, 142);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(227, 73);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "lekker ";
             // 
             // BTNClear
             // 
@@ -182,11 +172,21 @@
             this.BTNClear.UseVisualStyleBackColor = false;
             this.BTNClear.Click += new System.EventHandler(this.BTNClear_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(795, 142);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(227, 73);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "lekker ";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1000, 450);
+            this.ClientSize = new System.Drawing.Size(1004, 450);
             this.Controls.Add(this.BTNClear);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);

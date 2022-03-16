@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.ComponentModel;
 using System.Windows.Forms;
 using Modal;
 using Database;
@@ -87,9 +87,10 @@ namespace project
 
         private void BTNClear_Click(object sender, EventArgs e)
         {
+            Vis.Hide();
             Vlees.Hide();
             Fruit.Hide();
-            Vis.Hide();
         }
+
     }
 }
