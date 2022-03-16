@@ -68,8 +68,8 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1000, 24);
-            this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.TabIndex = 1;
+            this.menuStrip1.Text = "menuStrip1";
             // 
             // appToolStripMenuItem
             // 
@@ -134,8 +134,8 @@
             // Vis
             // 
             this.Vis.Location = new System.Drawing.Point(12, 27);
-            this.Vis.Size = new System.Drawing.Size(776, 411);
             this.Vis.Name = "Vis";
+            this.Vis.Size = new System.Drawing.Size(773, 411);
             this.Vis.TabIndex = 4;
             // 
             // pictureBox1
@@ -145,8 +145,8 @@
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(180, 96);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabStop = false;
             this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
