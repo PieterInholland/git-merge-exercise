@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Modal;
 
 namespace Database
 {
-    internal class FruitDAO
+    public class FruitDAO
     {
+
     }
 }

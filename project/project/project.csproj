@@ -77,5 +77,15 @@
   <ItemGroup>
     <None Include="Resources\gouda-jong-wiel_jhqj-q2.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Database\Database.csproj">
+      <Project>{f1c7448c-54aa-4175-b82b-a69d753801a0}</Project>
+      <Name>Database</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Modal\Model.csproj">
+      <Project>{300e18dd-50b6-4863-a7fc-2adc5364159e}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
