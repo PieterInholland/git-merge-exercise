@@ -84,5 +84,12 @@ namespace project
             //afsluiten
             this.Close();
         }
+
+        private void BTNClear_Click(object sender, EventArgs e)
+        {
+            Vlees.Hide();
+            Fruit.Hide();
+            Vis.Hide();
+        }
     }
 }

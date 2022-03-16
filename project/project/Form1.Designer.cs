@@ -44,12 +44,10 @@
             this.LVVis = new System.Windows.Forms.ListView();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.BTNClear = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
-
-            this.Vis.SuspendLayout();
-
             this.Fruit.SuspendLayout();
-
+            this.Vis.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -87,7 +85,7 @@
             // closeToolStripMenuItem1
             // 
             this.closeToolStripMenuItem1.Name = "closeToolStripMenuItem1";
-            this.closeToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.closeToolStripMenuItem1.Size = new System.Drawing.Size(103, 22);
             this.closeToolStripMenuItem1.Text = "Close";
             this.closeToolStripMenuItem1.Click += new System.EventHandler(this.closeToolStripMenuItem1_Click);
             // 
@@ -173,29 +171,36 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "lekker ";
             // 
+            // BTNClear
+            // 
+            this.BTNClear.BackColor = System.Drawing.Color.Chocolate;
+            this.BTNClear.Location = new System.Drawing.Point(795, 411);
+            this.BTNClear.Name = "BTNClear";
+            this.BTNClear.Size = new System.Drawing.Size(75, 23);
+            this.BTNClear.TabIndex = 7;
+            this.BTNClear.Text = "Clear";
+            this.BTNClear.UseVisualStyleBackColor = false;
+            this.BTNClear.Click += new System.EventHandler(this.BTNClear_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1000, 450);
+            this.Controls.Add(this.BTNClear);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
-
             this.Controls.Add(this.Fruit);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.Vis);
             this.Controls.Add(this.Vlees);
-
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Form1";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-
-            this.Vis.ResumeLayout(false);
-
             this.Fruit.ResumeLayout(false);
-
+            this.Vis.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -221,7 +226,7 @@
         private System.Windows.Forms.ListView LVVis;
 
         private System.Windows.Forms.ListView LVFruit;
-
+        private System.Windows.Forms.Button BTNClear;
     }
 }
 
