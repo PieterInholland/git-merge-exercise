@@ -34,7 +34,7 @@ namespace project
             {
                 Vis.Hide();
                 Fruit.Hide();
-
+                Vlees.Show();
                 // show panel
                 vleesListView.Show();
 
@@ -87,6 +87,13 @@ namespace project
         {
             //Close (Console) app
             System.Environment.Exit(1);
+        }
+
+        private void BTNClear_Click(object sender, EventArgs e)
+        {
+            Vis.Hide();
+            Fruit.Hide();
+            Vlees.Hide();
         }
     }
 }
