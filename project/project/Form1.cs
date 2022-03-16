@@ -68,14 +68,13 @@ namespace project
 
             }
         }
-        private void fruitGroentenToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            showPanel("Fruit");
-        }
-
         private void vleesToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+        private void fruitGroentenToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            showPanel("Fruit");
         }
 
         private void visToolStripMenuItem_Click(object sender, EventArgs e)
@@ -88,5 +87,6 @@ namespace project
             // WinForms app
             System.Windows.Forms.Application.Exit();
         }
+
     }
 }
