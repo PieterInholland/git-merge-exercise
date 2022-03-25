@@ -75,11 +75,7 @@ namespace project
             showPanel("Vis");
         }
 
-        private void vleesToolStripMenuItem_Click(object sender, EventArgs e)
 
-        {
-            showPanel("Vlees");
-        }
         private void fruitGroentenToolStripMenuItem_Click(object sender, EventArgs e)
         {
             showPanel("Fruit");
@@ -96,13 +92,6 @@ namespace project
             Vis.Hide();
             Fruit.Hide();
             Vlees.Hide();
-        }
-
-        private void BTNClear_Click(object sender, EventArgs e)
-        {
-            Vis.Hide();
-            Vlees.Hide();
-            Fruit.Hide();
         }
 
     }
