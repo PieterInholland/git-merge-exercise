@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Database
 {
-    internal class VisDAO
+    public class VisDAO
     {
     }
 }

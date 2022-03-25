@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
+using System.Linq;
+
 
 namespace Modal
 {
-    internal class Vis
+    public class Vis
     {
         public int id;
         public string name;
