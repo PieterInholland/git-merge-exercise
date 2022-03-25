@@ -46,10 +46,13 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.BTNClear = new System.Windows.Forms.Button();
+
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.menuStrip1.SuspendLayout();
             this.Fruit.SuspendLayout();
             this.Vlees.SuspendLayout();
+
+
             this.Vis.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -73,7 +76,7 @@
             this.visToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1000, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1004, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -152,7 +155,7 @@
             this.Vis.Controls.Add(this.LVVis);
             this.Vis.Location = new System.Drawing.Point(12, 27);
             this.Vis.Name = "Vis";
-            this.Vis.Size = new System.Drawing.Size(776, 411);
+            this.Vis.Size = new System.Drawing.Size(773, 411);
             this.Vis.TabIndex = 4;
             // 
             // LVVis
@@ -167,12 +170,25 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::project.Properties.Resources.gouda_jong_wiel_jhqj_q2;
-            this.pictureBox1.Location = new System.Drawing.Point(794, 27);
+            this.pictureBox1.Location = new System.Drawing.Point(808, 27);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(206, 96);
+
+            this.pictureBox1.Size = new System.Drawing.Size(180, 96);
+
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
+            // 
+            // BTNClear
+            // 
+            this.BTNClear.BackColor = System.Drawing.Color.Chocolate;
+            this.BTNClear.Location = new System.Drawing.Point(795, 411);
+            this.BTNClear.Name = "BTNClear";
+            this.BTNClear.Size = new System.Drawing.Size(75, 23);
+            this.BTNClear.TabIndex = 7;
+            this.BTNClear.Text = "Clear";
+            this.BTNClear.UseVisualStyleBackColor = false;
+            this.BTNClear.Click += new System.EventHandler(this.BTNClear_Click);
             // 
             // label1
             // 
@@ -198,21 +214,27 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+
             this.ClientSize = new System.Drawing.Size(1000, 450);
             this.Controls.Add(this.BTNClear);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.Fruit);
             this.Controls.Add(this.menuStrip1);
+
             this.Controls.Add(this.Vis);
+            this.Controls.Add(this.Fruit);
             this.Controls.Add(this.Vlees);
+
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Form1";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.Fruit.ResumeLayout(false);
+
             this.Vlees.ResumeLayout(false);
+
             this.Vis.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -242,7 +264,9 @@
 
         private System.Windows.Forms.ListView LVFruit;
         private System.Windows.Forms.Button BTNClear;
+
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
+
     }
 }
 

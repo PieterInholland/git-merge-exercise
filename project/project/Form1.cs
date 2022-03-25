@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+
 using System.Drawing;
+using System.Data;
 using System.Linq;
 using System.Text;
+using System.ComponentModel;
 using System.Windows.Forms;
 using Database;
 using Modal;
@@ -24,12 +25,12 @@ namespace project
             if (panelName == "Fruit")
             {
 
-
-            }            
+            }
             else if (panelName == "Vis")
             {
               
             }
+
             else if (panelName == "Vlees")
             {
                 Vis.Hide();
@@ -67,20 +68,21 @@ namespace project
                 }  
             }
 
+
+        }
+        private void vleesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            showPanel("Vis");
+        }
+
+        private void vleesToolStripMenuItem_Click(object sender, EventArgs e)
+
+        {
+            showPanel("Vlees");
         }
         private void fruitGroentenToolStripMenuItem_Click(object sender, EventArgs e)
         {
             showPanel("Fruit");
-        }
-
-        private void vleesToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            showPanel("Vlees");
-        }
-
-        private void visToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            showPanel("Vis");
         }
 
         private void closeToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -95,5 +97,13 @@ namespace project
             Fruit.Hide();
             Vlees.Hide();
         }
+
+        private void BTNClear_Click(object sender, EventArgs e)
+        {
+            Vis.Hide();
+            Vlees.Hide();
+            Fruit.Hide();
+        }
+
     }
 }
