@@ -26,57 +26,56 @@ namespace project
             {
 
             }
-            else if (panelName == "Vlees")
-            {
-                // hide all other panels
-
-                // show 
-
-            }
             else if (panelName == "Vis")
             {
-                // hide all other panels
-                Vlees.Hide();
-                Fruit.Hide();
-                // show 
-                Vis.Show();
-                //get data
-                VisDAO visDAO = new VisDAO();
-                List<Vis> visList = visDAO.getVis();
-
-                //clear listview
-                LVVis.Clear();
-                //grid
-                LVVis.View = View.Details;
-                LVVis.GridLines = true;
-                LVVis.FullRowSelect = true;
-                //header
-                LVVis.Columns.Add("ID", 50);
-                LVVis.Columns.Add("name", 150);
-                LVVis.Columns.Add("Description", 565);
-                foreach (Vis v in visList)
-                {
-                    string[] items = new string[3];
-                    items[0] = v.id.ToString();
-                    items[1] = v.name;
-                    items[2] = v.description;
-                    ListViewItem li = new ListViewItem(items);
-                    LVVis.Items.Add(li);
-                }
-
+              
             }
 
+            else if (panelName == "Vlees")
+            {
+                Vis.Hide();
+                Fruit.Hide();
+                Vlees.Show();
+                // show panel
+                vleesListView.Show();
+
+                // fill the vlees listview within the vlees panel with a list of vlees
+                VleesDAO vleesDAO = new VleesDAO();
+                List<Vlees> vleesList = vleesDAO.GetAll();
+
+                // clear the listview befire filling it again
+                vleesListView.Clear();
+
+                // create grid
+                vleesListView.View = View.Details;
+                vleesListView.GridLines = true;
+                vleesListView.FullRowSelect = true;
+
+                // add column header
+                vleesListView.Columns.Add("Id", 50);
+                vleesListView.Columns.Add("Name", 150);
+                vleesListView.Columns.Add("Description", 565);
+              
+                foreach (Vlees vlees in vleesList)
+                {
+                    // construct each row for the listview
+                    string[] item = new string[3];
+                    item[0] = vlees.id.ToString();
+                    item[1] = vlees.name;
+                    item[2] = vlees.description;
+                    ListViewItem li = new ListViewItem(item);
+                    vleesListView.Items.Add(li);
+                }  
+            }
+
+
         }
         private void vleesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             showPanel("Vis");
         }
 
-        private void vleesToolStripMenuItem_Click(object sender, EventArgs e)
 
-        {
-            showPanel("Vis");
-        }
         private void fruitGroentenToolStripMenuItem_Click(object sender, EventArgs e)
         {
             showPanel("Fruit");
@@ -84,15 +83,15 @@ namespace project
 
         private void closeToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            //afsluiten
-            this.Close();
+            //Close (Console) app
+            System.Environment.Exit(1);
         }
 
         private void BTNClear_Click(object sender, EventArgs e)
         {
             Vis.Hide();
-            Vlees.Hide();
             Fruit.Hide();
+            Vlees.Hide();
         }
 
     }
