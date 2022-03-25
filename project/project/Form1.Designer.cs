@@ -85,7 +85,7 @@
             // closeToolStripMenuItem1
             // 
             this.closeToolStripMenuItem1.Name = "closeToolStripMenuItem1";
-            this.closeToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.closeToolStripMenuItem1.Size = new System.Drawing.Size(103, 22);
             this.closeToolStripMenuItem1.Text = "Close";
             this.closeToolStripMenuItem1.Click += new System.EventHandler(this.closeToolStripMenuItem1_Click);
             // 
@@ -139,7 +139,7 @@
             this.Vis.Controls.Add(this.LVVis);
             this.Vis.Location = new System.Drawing.Point(12, 27);
             this.Vis.Name = "Vis";
-            this.Vis.Size = new System.Drawing.Size(776, 411);
+            this.Vis.Size = new System.Drawing.Size(773, 411);
             this.Vis.TabIndex = 4;
             // 
             // LVVis
@@ -154,9 +154,11 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::project.Properties.Resources.gouda_jong_wiel_jhqj_q2;
-            this.pictureBox1.Location = new System.Drawing.Point(794, 27);
+            this.pictureBox1.Location = new System.Drawing.Point(808, 27);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(198, 96);
+
+            this.pictureBox1.Size = new System.Drawing.Size(180, 96);
+
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
@@ -190,10 +192,10 @@
             this.Controls.Add(this.BTNClear);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.Fruit);
-            this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.Vis);
+            this.Controls.Add(this.Fruit);
             this.Controls.Add(this.Vlees);
+            this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Form1";

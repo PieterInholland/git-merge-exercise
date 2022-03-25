@@ -1,13 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data;
+
 using System.Drawing;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.ComponentModel;
 using System.Windows.Forms;
-using Modal;
 using Database;
+using Modal;
+
 
 namespace project
 {
@@ -69,14 +71,15 @@ namespace project
         {
             showPanel("Vis");
         }
+
+        private void vleesToolStripMenuItem_Click(object sender, EventArgs e)
+
+        {
+            showPanel("Vis");
+        }
         private void fruitGroentenToolStripMenuItem_Click(object sender, EventArgs e)
         {
             showPanel("Fruit");
-        }
-
-        private void visToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            showPanel("Vis");
         }
 
         private void closeToolStripMenuItem1_Click(object sender, EventArgs e)
